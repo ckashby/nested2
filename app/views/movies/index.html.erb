@@ -15,7 +15,7 @@
         <td><%= image_tag(movie.image.url, alt: "Movie poster") if movie.image? %></td>
         <td><%= movie.title %></td>
         <td><%= truncate(movie.description, length: 150) %></td>
-        <td><%= movie.user %></td>
+        <td><%= movie.user.email %></td>
         <td><%= link_to 'Show', movie %></td>
         <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
         <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>

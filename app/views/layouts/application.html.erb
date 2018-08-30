@@ -12,15 +12,15 @@
   </head>
 
   <body>
-    <div class="container">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+    <%= render 'layouts/header' %>
 
-      <%= yield %>
-      <hr>
-      <% if user_signed_in? %>
-        Signed in as: <%= current_user.email %>
-      <% end %>
+  	<div class="container">
+  		<% flash.each do |name, msg| %>
+  			<%= content_tag(:div, msg, class: "alert alert-info") %>
+  		<% end %>
+      
+  		<%= yield %>
     </div>
+
   </body>
 </html>
