@@ -2,10 +2,9 @@
   <%= image_tag @movie.image.url, alt: "Movie poster", class: 'card-img-top' %>
   <div class="card-body">
     <h5 class="card-title"><%= @movie.title %></h5>
-    <p class="card-text"><%= @movie.description %></p>
-    <p class="card-footer">Uploaded by: <%= @movie.user.email %></p>
+    <p class="card-text"><%= @movie.description %><hr>
+    Uploaded by: <%= @movie.user.email %></p>
+    <p class="card-footer"><%= link_to 'Edit', edit_movie_path(@movie), class: "btn btn-success" %> |
+    <%= link_to 'Back', movies_path, class: "btn btn-primary" %></p>
   </div>
 </div>
-
-<%= link_to 'Edit', edit_movie_path(@movie), class: "btn btn-success" %> |
-<%= link_to 'Back', movies_path, class: "btn btn-primary" %>
