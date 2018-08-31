@@ -1,3 +1,4 @@
+<%= image_tag(@movie.image.thumb.url, alt: 'movie poster image') if @movie.image? %>
 
 <%= simple_form_for(@movie) do |f| %>
   <%= f.error_notification %>
