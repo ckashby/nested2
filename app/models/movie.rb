@@ -1,5 +1,5 @@
 class Movie < ApplicationRecord
-  searchkick
+#  searchkick
   belongs_to :user
   mount_uploader :image, ImageUploader
   has_many :reviews
