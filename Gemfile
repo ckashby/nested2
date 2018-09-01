@@ -22,7 +22,7 @@ gem 'simple_form', '~> 4.0', '>= 4.0.1'
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
 
 gem 'carrierwave', '~> 1.2', '>= 1.2.3'
-gem 'searchkick', '~> 3.1', '>= 3.1.1'
+# gem 'searchkick', '~> 3.1', '>= 3.1.1'
 
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'prawn', '~> 2.2', '>= 2.2.2'
