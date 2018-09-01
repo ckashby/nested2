@@ -1,0 +1,10 @@
+<div class="row">
+  <% @movies.each do |movie| %>
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <%= image_tag movie.image.url, alt: "Movie poster", class: 'card-img-top' %><br>
+        <%= link_to "READ MOVIE REVIEWS", movie, class: "btn btn-primary" %>
+      </div>
+    </div>
+  <% end %>
+</div>
